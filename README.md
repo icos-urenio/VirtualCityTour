@@ -17,4 +17,5 @@ Have a bug? Please create an issue here on GitHub!
 VirtualCityTour's source code is licensed under the [GNU Affero General Public License](https://www.gnu.org/licenses/agpl.html).
 
 ## Changelog
-Version 2.0 contains many additions and bug fixes based on end-users comments and testing phase feedback
+VirtualCityTour is the next step of VirtualCityTour360 (*deprecated*)
+
