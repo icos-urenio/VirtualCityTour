@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="map"
+		label="COM_VIRTUALCITYTOUR_SETTINGS_GOOGLE_MAP_LABEL"
+		description="COM_VIRTUALCITYTOUR_SETTINGS_GOOGLE_MAP_DESC"
+	>
+
+			<field
+				name="latitude"
+				type="text"
+				label="COM_VIRTUALCITYTOUR_SETTINGS_INITIAL_LATITUDE_LABEL"
+				description="COM_VIRTUALCITYTOUR_SETTINGS_INITIAL_LATITUDE_DESC"
+			/>
+			<field
+				name="longitude"
+				type="text"
+				label="COM_VIRTUALCITYTOUR_SETTINGS_INITIAL_LONGITUDE_LABEL"
+				description="COM_VIRTUALCITYTOUR_SETTINGS_INITIAL_LONGITUDE_DESC"
+			/>
+			<field
+				name="zoom"
+				type="text"
+				label="COM_VIRTUALCITYTOUR_SETTINGS_INITIAL_MAP_ZOOM_LABEL"
+				description="COM_VIRTUALCITYTOUR_SETTINGS_INITIAL_MAP_ZOOM_DESC"
+			/>
+			<field
+				name="maplanguage"
+				type="text"
+				label="COM_VIRTUALCITYTOUR_SETTINGS_MAP_LANGUAGE_LABEL"
+				description="COM_VIRTUALCITYTOUR_SETTINGS_MAP_LANGUAGE_DESC"
+			/>			
+			<field
+				name="mapregion"
+				type="text"
+				label="COM_VIRTUALCITYTOUR_SETTINGS_MAP_REGION_LABEL"
+				description="COM_VIRTUALCITYTOUR_SETTINGS_MAP_REGION_DESC"
+			/>
+			<field
+				name="searchterm"
+				type="text"
+				label="COM_VIRTUALCITYTOUR_SETTINGS_HIDDEN_SEARCH_TERM_LABEL"
+				description="COM_VIRTUALCITYTOUR_SETTINGS_HIDDEN_SEARCH_TERM_DESC"
+			/>
+	</fieldset>
+
+	<fieldset name="general"
+		label="COM_VIRTUALCITYTOUR_SETTINGS_GENERAL_SETTINGS_LABEL"
+		description="COM_VIRTUALCITYTOUR_SETTINGS_GENERAL_SETTINGS_DESC"
+	>
+			<field name="showcomments" type="radio" default="1" label="COM_VIRTUALCITYTOUR_SETTINGS_SHOW_COMMENTS_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_SHOW_COMMENTS_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>		
+	
+			<field name="approvepoi" type="radio" default="0" label="COM_VIRTUALCITYTOUR_SETTINGS_POI_APPROVAL_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_POI_APPROVAL_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>		
+	
+			<field name="allowcommentingonclose" type="radio" default="1" label="COM_VIRTUALCITYTOUR_SETTINGS_COMMENT_ON_CLOSED_POIS_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_COMMENT_ON_CLOSED_POIS_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>					
+			<field name="allowvotingonclose" type="radio" default="1" label="COM_VIRTUALCITYTOUR_SETTINGS_VOTE_ON_CLOSED_POIS_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_VOTE_ON_CLOSED_POIS_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>	
+			
+			<field name="showrelativedates" type="radio" default="1" label="COM_VIRTUALCITYTOUR_SETTINGS_SHOW_RELATIVE_DATES_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_SHOW_RELATIVE_DATES_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>	
+			<field name="dateformat" type="text"
+				label="COM_VIRTUALCITYTOUR_SETTINGS_DATE_FORMAT_LABEL"
+				description="COM_VIRTUALCITYTOUR_SETTINGS_DATE_FORMAT_DESC"
+				default="m/d/Y h:i:s"
+			/>			
+				
+	</fieldset>
+
+	<fieldset name="mailnotifications"
+		label="COM_VIRTUALCITYTOUR_SETTINGS_MAIL_NOTIFICATIONS_LABEL"
+		description="COM_VIRTUALCITYTOUR_SETTINGS_MAIL_NOTIFICATIONS_DESC"
+	>
+			<field name="mailnewpoiuser" type="radio" default="0" label="COM_VIRTUALCITYTOUR_SETTINGS_ON_NEW_POI_TO_USER_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_ON_NEW_POI_TO_USER_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>			
+			<field name="mailnewpoiadmins" type="radio" default="0" label="COM_VIRTUALCITYTOUR_SETTINGS_ON_NEW_POI_TO_ADMINS_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_ON_NEW_POI_TO_ADMINS_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>			
+			<field name="mailnewcommentuser" type="radio" default="0" label="COM_VIRTUALCITYTOUR_SETTINGS_ON_NEW_COMMENT_TO_USER_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_ON_NEW_COMMENT_TO_USER_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>			
+			<field name="mailnewcommentadmins" type="radio" default="0" label="COM_VIRTUALCITYTOUR_SETTINGS_ON_NEW_COMMENT_TO_ADMINS_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_ON_NEW_COMMENT_TO_ADMINS_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>	
+			<field name="mailcategorychangeadmins" type="radio" default="0" label="COM_VIRTUALCITYTOUR_SETTINGS_ON_CHANGE_CATEGORY_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_ON_CHANGE_CATEGORY_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>	
+			<field name="mailstatuschangeuser" type="radio" default="0" label="COM_VIRTUALCITYTOUR_SETTINGS_ON_CHANGE_STATUS_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_ON_CHANGE_STATUS_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>					
+	</fieldset>	
+
+	<fieldset name="loadscripts"
+		label="COM_VIRTUALCITYTOUR_SETTINGS_ADVANCED_LABEL"
+		description="COM_VIRTUALCITYTOUR_SETTINGS_ADVANCED_DESC"
+	>
+			<field name="loadjquery" type="radio" default="1" label="COM_VIRTUALCITYTOUR_SETTINGS_LOAD_JQUERY_JS_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_LOAD_JQUERY_JS_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>
+			<field name="loadjqueryui" type="radio" default="1" label="COM_VIRTUALCITYTOUR_SETTINGS_LOAD_JQUERY_UI_JS_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_LOAD_JQUERY_UI_JS_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>
+			<field name="loadbootstrap" type="radio" default="1" label="COM_VIRTUALCITYTOUR_SETTINGS_LOAD_BOOTSTRAP_JS_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_LOAD_BOOTSTRAP_JS_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>
+			<field name="loadbootstrapcss" type="radio" default="1" label="COM_VIRTUALCITYTOUR_SETTINGS_LOAD_BOOTSTRAP_CSS_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_LOAD_BOOTSTRAP_CSS_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>
+			<field name="popupmodal" type="radio" default="0" label="COM_VIRTUALCITYTOUR_SETTINGS_AJAX_MODAL_CLASS_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_AJAX_MODAL_CLASS_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>			
+			<field name="enablejsoncontroller" type="radio" default="0" label="COM_VIRTUALCITYTOUR_SETTINGS_ENABLE_JSON_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_ENABLE_JSON_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>		
+	</fieldset>
+	
+	<fieldset name="credits" label="COM_VIRTUALCITYTOUR_SETTINGS_CREDITS_LABEL">
+			<field name="credits" type="radio" default="1" label="COM_VIRTUALCITYTOUR_SETTINGS_SHOW_CREDITS_LABEL" description="COM_VIRTUALCITYTOUR_SETTINGS_SHOW_CREDITS_DESC">
+			  <option value="0">JNO</option>
+			  <option value="1">JYES</option>
+			</field>	
+			<field name="version" label="Version" type="text" default="VirtualCityTour" readonly="true" />			
+	</fieldset>
+		
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			validate="rules"
+			component="com_virtualcitytour"
+			section="component" />
+	</fieldset>	
+
+</config>

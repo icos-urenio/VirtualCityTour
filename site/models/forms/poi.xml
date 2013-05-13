@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/components/com_virtualcitytour/models/rules">
+	<fieldset name="details">
+
+		<field
+			name="title"
+			type="text"
+			label="COM_VIRTUALCITYTOUR_VIRTUALCITYTOUR_FIELD_TITLE_LABEL"
+			description="COM_VIRTUALCITYTOUR_VIRTUALCITYTOUR_FIELD_TITLE_DESC"
+			class="inputbox validate-title"
+			required="true"
+			default=""
+		/>
+		<field
+			name="catid"
+			type="category"
+			extension="com_virtualcitytour"
+			class="inputbox validate-catid"
+			default=""
+			label="COM_VIRTUALCITYTOUR_VIRTUALCITYTOUR_FIELD_CATID_LABEL"
+			description="COM_VIRTUALCITYTOUR_VIRTUALCITYTOUR_FIELD_CATID_DESC"
+			required="true"
+			validate="catid"
+			published="1"
+		>
+		
+			<option value="0">JOPTION_SELECT_CATEGORY</option>
+		</field>
+	
+		<field
+			name="address"
+			type="text"
+			label="COM_VIRTUALCITYTOUR_VIRTUALCITYTOUR_FIELD_ADDRESS_LABEL"
+			description="COM_VIRTUALCITYTOUR_VIRTUALCITYTOUR_FIELD_ADDRESS_DESC"
+			class="inputbox validate-address"
+			required="true"
+			default=""
+		/>			
+
+		<field
+			name="photo"
+			type="file"
+			label="COM_VIRTUALCITYTOUR_VIRTUALCITYTOUR_FIELD_POIIMAGE_LABEL"
+			description="COM_VIRTUALCITYTOUR_VIRTUALCITYTOUR_FIELD_POIIMAGE_DESC"
+			class="poiimage"
+			required="false"
+			default=""
+		/>		
+		
+		<field
+			name="description"
+			type="textarea"
+			label="COM_VIRTUALCITYTOUR_VIRTUALCITYTOUR_FIELD_DESCRIPTION_LABEL"
+			description="COM_VIRTUALCITYTOUR_VIRTUALCITYTOUR_FIELD_DESCRIPTION_DESC"
+			class="inputbox validate-description"
+			filter="safehtml"
+			required="true"
+			default=""
+			rows="5"
+			cols="50"
+		/>		
+
+
+		
+		<field
+			name="latitude"
+			type="hidden"
+		/>		
+		<field
+			name="longitude"
+			type="hidden"
+		/>		
+		
+		<field 
+			name="reported" 
+			type="hidden"
+		/>
+		
+		<field 
+			name="acknowledged" 
+			type="hidden"
+		/>		
+		
+		<field 
+			name="closed" 
+			type="hidden"
+		/>		
+
+		<field 
+			name="votes" 
+			type="hidden"
+			default="1"
+		/>		
+		
+		<field 
+			name="currentstatus" 
+			type="hidden"
+			default="1"
+		/>		
+		
+		
+	</fieldset>
+	
+</form>
